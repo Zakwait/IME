@@ -547,6 +547,25 @@ border-radius: 1.25rem;
   text-align: center;
 
 }
+.popular2__titleL {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  background-color: #58585867;
+  border-radius: 25px;
+  color: white;
+}
+.popular2__titleL span {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  background-color: #6e6e6e7e;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+}
 
 .popular2__subtitle {
   right: 0;
@@ -600,16 +619,20 @@ border-radius: 1.25rem;
   animation: dis-card 1s forwards;
   /* opacity: 0; */
 }
+.popular2__card:hover .popular2__titleL {
+  animation: dis-card 1s forwards;
+  /* opacity: 0; */
+}
 .popular2__card:hover .popular2__data-group {
   animation: show-card 2s forwards;
   opacity: 1;
 }
 @keyframes show-card {
   50%{
-    transform: translateY(-18rem);
+    transform: translateY(-25rem);
   }
   100%{
-    transform: translateY(-18rem);
+    transform: translateY(-23rem);
   }
 }
 @keyframes dis-card {
@@ -638,6 +661,11 @@ border-radius: 1.25rem;
   /* opacity: 0; */
 }
 
+.popularBoss__card:hover .popular2__titleL {
+  animation: dis-card 1s forwards;
+  /* opacity: 0; */
+}
+
 .popularBoss__card:hover .popular2__data-group {
   animation: show-cardB 2s forwards;
   opacity: 1;
@@ -652,11 +680,11 @@ border-radius: 1.25rem;
 }
 @keyframes show-cardB {
   50% {
-    transform: translateY(-30rem);
+    transform: translateY(-35rem);
   }
 
   100% {
-    transform: translateY(-28rem);
+    transform: translateY(-33rem);
   }
 }
 
